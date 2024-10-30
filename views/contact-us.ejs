@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body-contact-us">
+  <div class="content_section">
+    <div class="section-events">
+        <%- include('partials/nav'); %>
+    </div>
+        
+    <div class="upcoming-evnts-section">
+        <div class="page-container">
+            <h2 class="guest-header">CONTACT US</h2>
+            <span class="vice-separator vice-separator--number"><span></span></span>
+
+            <div class="container">  
+                <form id="contact">
+                    <fieldset>
+                         <label for="response" id="server_response"></label>
+                      </fieldset>
+                  <h3> Contact Form</h3>
+                  <h4>Contact us for inquiries</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" id="name" tabindex="0" autofocus>
+                    <label for="error" id="name_error" ></label>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" id="email" type="email" tabindex="2" >
+                    <label for="error" id="email_error"></label>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Add your inquiry here...." id="message" tabindex="5"></textarea>
+                    <label for="error" id="message_error"></label>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact_submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+                 </form>
+              </div>
+    </div>
+      </div>
+
+ </div>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+    //function to validate form on submision and handle ajax request
+   submitContactInfo();
+</script>
+<%-include('partials/footer')%>
+</body>
+</html>
