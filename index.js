@@ -1,7 +1,7 @@
 //Import express
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = process.env || 3001;
 
 //Import sqlite3
 const sqlite3 = require('sqlite3').verbose();
